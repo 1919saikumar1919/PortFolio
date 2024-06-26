@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9a52ff2e75.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+   
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" width="35px" height="55px">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Protfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p style="color: rgb(255, 64, 0);font-weight:bold ; ">.Net Developer</p>
+                <h2>Hello, I'm <span id="span">Saikumar</span> <br> from Hyderabad</h2>
+
+            </div>
+    
+            
+        </div>
+    </div>
+
+    <!-- ---------about--------------------------------- -->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="About-col-1">
+                    <img src="images/back.jpg" alt="profilepic" >
+                </div>
+                <div class="About-col-2">
+                <h1 class="sub-title">About Me</h1>
+                 <p > my self saikumar form Hyderabad and i am a dot net Developer, 
+                     i completed my b.tech in bits college vizag in the stream of
+                     mechanical in 2023 with agrecate of 61%.
+                 </p>
+                 <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"  onclick="opentab('education')">Education</p> 
+                 </div>
+                 <div class="tab-contents active-tab" id="skills">
+
+                    <ul>
+                        <li><span>Framework</span><br>.Net(asp.net windows forms,asp.net web forms,asp.net mvc)</li>
+                        <li><span>Programming Languages</span><br> C#(oops concepts,arrys,collections,Abstract class & interfaces,Exception handling and Multithreading)</li>
+                        <li><span>Frontend Technologies</span><br>HTML,CSS,Javascript</li>
+                        <li><span>Database</span><br>sql server(DDL,DML,DCL,TCL,Constrains,Joints,Views,Stored Procedures,Functions,Clauses)</li>
+                        <li><span>IDE</span><br>Visual Studio 2022,Visual Studio Code</li>
+                       
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="experience">
+
+                    <ul>
+                        
+                        <li><span>Training Details</span><br>
+                            <span>Company  :</span> Magneq Software Solution <br>
+                            <span>Duration : </span> Sep-2023 to Feb-2024<br>I'm trained as a .net developer ,A .NET Developer is responsible for developing, implementing, 
+                            and maintaining .NET applications using Microsoft's .NET framework. These 
+                            developers design, build, and test .NET-based applications, create technical 
+                            documentation, and analyze existing applications. They use a variety of 
+                            programming languages, such as C# and ASP.NET, as well as databases such as 
+                            SQL Server and MySQL. Additionally .NET Developers collaborate with other 
+                            members of the development team to ensure the development process runs 
+                            smoothly.</li>
+                       
+                    </ul>
+                 </div>
+                 
+                 <div class="tab-contents" id="education">
+
+                    <ul>
+                        <li><span>2023</span> <br> Bachelor Of Technology In Mechanical Engineering In BITS College ,Vizag</li>
+                        <li><span>2020</span><br>Diploma In Mechanical Engineering In Sri Venkateswara Polytechnic College,Etcherla</li>
+                        <li><span>2017</span> <br>Government ITI,Rajam</li>
+                        <li><span>2015</span><br>Government High School,Rajam</li>
+
+
+                       
+                    </ul>
+                 </div>
+                
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ------------------services------------- -->
+    <div id="services">
+        <div class="container">
+            <h1>My Services</h1>
+            <div class="services-list">
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>designing the responsive websites  </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <h2>UI/ux Design</h2>
+                    <p>designing the responsive websites  </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>app Design </h2>
+                    <p>designing the responsive websites  </p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <!-- ------------------portfolio--------- -->
+    <div id="portfolio">
+        <div class="container">
+                <h1 id="sub-title"> My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="work1" class="workimg">
+                    <div class="layer">
+                        
+                        <h3>Music App</h3>
+                        <p>The app connects you yo the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="work2" class="workimg">
+                    <div class="layer">
+                        
+                        <h3>Online shopping App</h3>
+                        <p>The app connects you yo the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="work3" class="workimg">
+                    <div class="layer">
+                        
+                        <h3>Music App</h3>
+                        <p>The app connects you yo the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn"> see more</a>
+        </div>
+    </div>
+    <!---------------------contact----------------->
+
+
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> saikumarboodida123@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 9999999999</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></i></a>
+                    <a href="mailto:saikumarboodida123@gmail.com"><i class="fa-solid fa-envelope-open-text"></i></i></a>
+                    <a href="https://www.instagram.com/invites/contact/?i=9l2xm07y5fzv&utm_content=oom7jue"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sai-kumar-b-975695269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/sai.pdf" download="btn btn2" class="btn btn2">Download Cv</a>
+            </div>
+            <div class="content-right">
+                   <form >
+                    <input type="text" name="name"  placeholder="your name" required>
+                    <input type="email" name="mail" placeholder="your mail" required>
+                    <textarea name="message" placeholder="your message" ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+
+            </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &#169; <i class="fa-solid fa-heart"></i> saikumar.   </p>
+        </div>
+    </div>
+    <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname)
+        {
+
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+
+
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+            function openmenu(){
+
+                sidemenu.style.right="0";
+            }
+            function closemenu(){
+
+            sidemenu.style.right="-200px";
+}
+            
+
+    </script>
+    
+</body>
+</html>
